@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 15px;
+  }
+  
+  #results {
+    margin-top: 10px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  

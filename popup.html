@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      color: #333;
+      width: 600px;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #e8e8e8;
+      border-bottom: 1px solid #ddd;
+    }
+    nav button {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #333;
+    }
+    nav button.active {
+      background-color: #4caf50;
+      color: white;
+    }
+    main {
+      padding: 20px;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    .info {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .info h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #4caf50;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .info p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .info span.green {
+      color: #4caf50;
+    }
+    .info span.red {
+      color: #e53935;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    ul li a {
+      color: #0066cc;
+      text-decoration: none;
+      word-wrap: break-word;
+    }
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    .toggle-button {
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    .toggle-button:hover {
+      background-color: #45a049;
+    }
+    .dropdown-list {
+      display: none;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SEO Checker</h1>
+  </header>
+  <nav>
+    <button class="tab active" data-tab="main">Main Info</button>
+    <button class="tab" data-tab="headers">Headers</button>
+    <button class="tab" data-tab="images">Images</button>
+  </nav>
+  <main>
+    <div id="main" class="section active"></div>
+    <div id="headers" class="section"></div>
+    <div id="images" class="section"></div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
